@@ -1,0 +1,262 @@
+@import "reset";//重置样式
+.woman_cloth{
+    margin: 45px 0;
+}
+//标题
+.woman_cloth_title{
+    width: 100%;
+    height: 22px;
+    line-height: 22px;
+    overflow: hidden;
+    margin: 0 0 16px;
+    font-size: 20px
+}
+
+//最左边的竖线
+.woman_cloth_title>i{
+    display: block;
+    float: left;
+    width: 8px;
+    height:22px;
+    margin-right: 10px;
+    background: #FFA1B8;
+}
+//女装
+.woman_cloth_title>span{
+    margin-right: 30px;
+    height: 22px;
+    line-height: 22px;
+    font-size: 20px;
+    font-weight: 700;
+    display: block;
+    float: left;
+}
+//标题右边的列表
+.woman_cloth_title .woman_cloth_details{
+    display: block;
+    float: left;
+    font-size: 14px;
+}
+.woman_cloth_title .woman_cloth_details>a{
+    margin: 0 16px;
+    font-size: 14px;
+}
+//鼠标悬停时
+.woman_cloth_title .woman_cloth_details>a:hover{
+    color: #FF5777;
+}
+//下面的图
+//左边的大图
+.woman_cloth_bpic{
+    display: block;
+    width: 230px;
+    height: 624px;
+    margin-right: 10px;
+    overflow: hidden;
+    float: left;
+}
+.woman_cloth .cloth_bpics{
+    height: 624px;
+}
+.woman_cloth_bpic>a{
+    display: block;
+    width: 100%;
+}
+.woman_cloth_bpic>a>img{
+    display: block;
+    width: 100%;
+}
+
+//右边的图片列表
+.woman_cloth_imgs .right_img_list{
+    width: 950px;
+    float: left;
+    overflow: hidden;
+}
+//轮播图 左右箭头
+.woman_cloth_lunbo{
+    width: 950px;
+    height: 408px;
+    margin-bottom: 10px;
+    position: relative;
+}
+//轮播图
+.woman_cloth_lunbo .woman_cloth_lunboimgs{
+    width: 100%;
+    height: 408px;
+    position: relative;
+}
+//第一个轮播盒子
+.woman_cloth_lunboimgs .cloth_lunbo_box1{
+    left: 0;
+}
+//每一个盒子公共代码
+.woman_cloth_lunboimgs .cloth_lunbo_box{
+    position: absolute;
+    top: 0;
+}
+//每一个轮播盒子的每一个小盒子
+.cloth_lunbo_box .f_boxs{
+    display: inline-block;
+    width: 230px;
+    height: 408px;
+    padding: 16px;
+    margin-right: px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: #ffffff;
+    border-radius: 2px;
+    overflow: hidden;
+}
+.cloth_lunbo_box .f_boxs:last-child{
+    margin-right: 0;
+}
+.woman_cloth_lunboimgs .cloth_lunbo_box a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+//图片
+.cloth_lunbo_box .lunbo_img{
+    // position: relative;
+    width: 198px;
+    height: 297px;
+    border-radius: 2px;
+    overflow: hidden;
+    border-radius: 4px;
+    margin-bottom: 7px;
+}
+.cloth_lunbo_box .lunbo_img>img{
+    border-radius: 4px;
+    width: 100%;
+    height: 100%;
+}
+//描述
+.lunbo_img_desription{
+    width: 198px;
+    height: 2.8em;
+    line-height: 1.4em;
+    font-size: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    letter-spacing: 0;
+    color: #333333;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+//价格
+.lunbo_img_price{
+    height: 24px;
+    line-height: 24px;
+    font-size: 22px;
+    color: #FF4466;
+    margin-top: 3px;
+}
+.lunbo_img_price>span{
+    font-size: 18px;
+    margin-right: 3px;
+}
+//左右箭头
+.woman_cloth_lunbo #left,
+.woman_cloth_lunbo #right{
+    margin-top: -60px;
+    width: 25px;
+    height: 54px;
+    position: absolute;
+    top: 50%;
+    z-index: 99;
+}
+.woman_cloth_lunbo #left{
+    background: url(https://s10.mogucdn.com/mlcdn/c45406/180327_3cgej2gb2igbfjbcga60bgki26fal_25x54.png) no-repeat;
+    position: absolute;
+    left: 16px;
+}
+.woman_cloth_lunbo #right{
+    background: url(https://s10.mogucdn.com/mlcdn/c45406/180327_2c7lk3618ij23ckhdf7i24f57a4ja_25x54.png) no-repeat;
+    right: 16px;
+}
+//轮播图下面第一排
+.right_img_list .lunbo_bot_1{
+    display: inline-block;
+    width: 950px;
+    height: 113px;
+    overflow: hidden;
+}
+.right_img_list .lunbo_bot_1>a{
+    display: inline-block;
+    width: 230px;
+    height: 113px;
+    margin-right: 6px;
+}
+.right_img_list .lunbo_bot_1>a:last-child{
+    margin-right: 0;
+}
+.right_img_list .lunbo_bot_1>a:nth-child(1){
+    width: 470px;
+}
+.right_img_list .lunbo_bot_1>a>img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+//轮播图下面第二排
+.right_img_list .lunbo_bot_2{
+    width: 950px;
+    height: 86px;
+    overflow: hidden;
+    display: inline-block;
+    margin-top: 6px;
+}
+.lunbo_bot_2>a{
+    display: inline-block;
+    background: #ffffff;
+    width: 230px;
+    height: 83px;
+    overflow: hidden;
+    margin-right: 6px;
+    position: relative;
+}
+.lunbo_bot_2>a:last-child{
+    margin-right: 0;
+}
+//左边的文字
+.lunbo_bot_2 .lunbo_bot_2l{
+    display: inline-block;
+    width: 137px;
+    margin-left: 13px;
+    margin-top: 15px;
+}
+.lunbo_bot_2 .lunbo_bot_2l>p:first-child{
+    overflow: hidden;
+    width: 100%;
+    font-size: 20px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    //background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(#ff5757), to(#D831FD));
+    // -webkit-text-fill-color: transparent;
+}
+.lunbo_bot_2 .lunbo_bot_2l>p:last-child{
+    overflow: hidden;
+    width: 100%;
+    font-size: 14px;
+    color: #666666;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+//右边的图片
+.lunbo_bot_2 .lunbo_bot_2r{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 83px;
+    height: 83px;
+    overflow: hidden;
+}
+.lunbo_bot_2 .lunbo_bot_2r>img{
+    width: 100%;
+    display: block;
+    border: 0;
+}
+
+

@@ -1,0 +1,33 @@
+@import "reset";//重置样式
+@import "header-nav";//公共部分头部导航
+@import "header-wrap";//头部版心部分
+@import "header-s-c-l";//搜索框 购物车 登陆注册
+@import "_main";//主体部分
+@import "aside-nav";//侧边导航
+@import "footer";//底部
+@import "_topnav";//顶部悬浮
+.head .header-login-search{
+    margin-top:27px;
+}
+.opacitychange{
+    opacity: 0;
+}
+.select_lists_btn{
+    position: absolute;
+    bottom: 10px;
+    left: 47px;
+    z-index: 10;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+}
+.select_lists_btn a{
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    background: #fff;
+    border-radius: 50%;
+}
+.c{
+    background: orange!important;
+}

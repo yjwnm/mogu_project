@@ -1,0 +1,195 @@
+@charset "utf-8";
+// 头部导航
+.header-nav{
+    height: 33px;
+    line-height: 33px;
+    background: #fff;
+    border-bottom:1px solid #f0f0f0;
+}
+
+//头部导航的右边
+.header-nav-right{
+    float: right;
+    margin-right: 42px;
+}
+//头部导航的右边列表
+.header-nav-right>ul>li{
+    float: left;
+    color: #999;
+}
+//头部导航的右边列表关于我们
+.header-nav-right>ul .a-nav{
+    position: relative;
+}
+.header-nav-right>ul>li>a{
+    color: #999;
+    display: inline-block;
+}
+.header-nav-right>ul>li>a:after{
+    content: "|";
+    margin: 0 20px;
+}
+//关于我们
+.header-nav-right ul .a-nav:after{
+    content: "";
+}
+//插入小图
+.header-nav-right>ul>li>a>i{
+    display: inline-block;
+    width: 10px;
+    height: 12px;
+    background-repeat: no-repeat;
+    background-size: 10px 10px;
+    vertical-align: middle;
+    margin-right: 4px;
+}
+//首页小背景图
+.header-nav-right>ul>li:first-child i{
+    background-image: url(https://s10.mogucdn.com/mlcdn/c45406/181226_5f4j2e62hj1kk9dd49f433b08bfbh_20x20.png);
+}
+//商城小背景图
+.header-nav-right>ul>li:nth-child(2) i{
+    background-image: url(https://s10.mogucdn.com/mlcdn/c45406/181212_4c5eb9ijbla4a1948fhjiiiag725h_20x20.png);
+}
+//关于我们小背景图
+.header-nav-right .a-nav i{
+    background-image: url(https://s10.mogucdn.com/mlcdn/c45406/181205_8eg8ea1a3k85c16ai1hl4735kalkf_16x10.png);
+    width: 6px;
+    height:6px;
+    background-size: 6px 5px;
+    margin-left: 4px;
+}
+//头部导航关于我们下面的二级导航
+.header-nav-right .a-nav-subnav{
+    display: none;
+    width: 960px;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,.05);
+    border-top: 1px solid #F0F0F0;
+    border-radius: 2px;
+    background: #fff;
+    color: #333;
+    padding: 32px 0px;
+    box-sizing: border-box;
+    position: absolute;
+    right: 30px;
+    cursor: pointer;
+    z-index: 9999;
+}
+//头部导航关于我们下面的二级导航顶部
+.header-nav-right .a-nav-subnav .top{
+    display: flex;
+    padding-left: 40px;
+}
+.header-nav-right .a-nav-subnav-top{
+    float: left;
+    flex: 1;
+}
+//头部导航关于我们下面的二级导航标题
+.header-nav-right .a-nav-subnav-top .a-nav-subnav-top-title{
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 23px;
+}
+//头部导航关于我们下面的二级导航标题下面的线
+.header-nav-right .a-nav-subnav-top .a-nav-subnav-top-title>p{
+    display: block;
+    width: 30px;
+    height: 1px;
+    background: #999;
+    margin-top: 4px;
+}
+//头部导航关于我们下面的二级导航列表
+.header-nav-right .a-nav-subnav-top ul>li{
+    width: 80px;
+    height: 29px;
+    line-height: 29px;
+    font-weight: 300;
+    color: #333;
+}
+//鼠标悬停在a标签上的时候改变颜色
+.header-nav-right .a-nav-subnav-top .a-nav-subnav-top-help>li>a:hover{
+    color:#f46;
+}
+//移动客户端下载
+.header-nav-right .a-nav-subnav-top .a-nav-subnav-top-app>li{
+    position: relative;
+}
+//图片
+.header-nav-right .a-nav-subnav-top .a-nav-subnav-top-app>li>img{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: -14px;
+    left: -70px;
+    display: none;
+}
+//鼠标悬停显示图片
+.header-nav-right .a-nav-subnav-top .a-nav-subnav-top-app>li:hover img{
+    display: block;
+}
+
+//二级导航中间部分
+.header-nav-right .a-nav-subnav-middle{
+    width: 918px;
+    height: 33px;
+    line-height: 33px;
+    margin: 28px 21px 0;
+    position: relative;
+}
+.header-nav-right .a-nav-subnav-middle>div{
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%,-50%);
+   color: #999;
+}
+.header-nav-right .a-nav-subnav-middle>div>span{
+    color:#666;
+}
+//前面插入水平线
+.header-nav-right .a-nav-subnav-middle::before{
+    content: "";
+    width: 305px;
+    height: 1px;
+    background: rgba(216,216,216,.5);
+    display: block;
+    position: absolute;
+    left: 21px;
+    top: 16px; 
+}
+//后面插入水平线
+.header-nav-right .a-nav-subnav-middle::after{
+    content: "";
+    width: 305px;
+    height: 1px;
+    background: rgba(216,216,216,.5);
+    display: block;
+    position: absolute;
+    right: 21px;
+    top: 16px;
+}
+
+//导航底部
+.header-nav-right .a-nav-subnav-bottom{
+    margin-top: 6px;
+    text-align: center;
+    line-height: 26px;
+    font-weight: 300;
+    color: #999;
+}
+//导航底部的头部,导航底部的中间
+.a-nav-subnav-bottom a{
+    color:#999;
+}
+.a-nav-subnav-bottom a::after,
+.a-nav-subnav-bottom-middle span:after
+{
+    content: "|";
+    margin: 0 10px;
+}
+//鼠标悬停在关于我们上面，显示二级导航
+.header-nav-right>ul>li:last-child:hover .a-nav-subnav{
+    display: block;
+}
+
+

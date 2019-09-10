@@ -1,0 +1,312 @@
+@import "reset";//重置样式
+@import "footer";//引入尾部样式
+//头部
+.login-header{
+    width: 100%;
+    padding: 20px 0;
+}
+//头部版心
+.login-header-wrap{
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+//蘑菇街logo
+.login-header .login-header-wrap>a{
+    display: inline-block;
+    width: 130px;
+    height: 57px;
+    position: relative;
+    top: 4px;
+}
+.login-header .login-header-wrap>a>img{
+    width: 130px;
+    display: block;
+    position: absolute;
+    top: -28px;
+}
+//提醒绑定手机号文字
+.login-header .login-header-wrap>span{
+    display: inline-block;
+    height: 28px;
+    line-height: 28px;
+    width: 861px;
+    background-color: #ffefef;
+    border: 1px solid #ffc0cc;
+    text-align: center;
+    font-size: 11px;
+    color: #666;
+    position: absolute;
+    left: 155px;
+    top: 12px;
+}
+
+//中间主体部分
+.login-main{
+    background: url(https://s17.mogucdn.com/p2/170105/upload_541i9di2b3icf9j13f24e0bg7b1i6_1920x600.png) no-repeat center center;
+    width: 100%;
+    height: 600px;
+}
+
+// 中间主体部分的左边
+.login-main .login-mainl{
+    width: 62.5%;
+    height: 600px;
+    float: left;
+}
+.login-main .login-mainl>a{
+    display: block;
+    width: 700px;
+    margin-left: 56px;
+    margin-top: 80px;
+    height: 440px;
+    overflow: hidden
+}
+//中间部分的右边
+.login-mainr{
+    width: 356px;
+    display: block;
+    float: left;
+    padding: 0 0 30px 44px;
+    background-color: #ffeceb;
+    margin-top: 80px;
+    opacity: .9;
+    position: relative;
+}
+//手机登录图标
+.login-mainr-method{
+    width: 46px;
+    height: 46px;
+    background: url(https://s10.mogucdn.com/p1/160418/upload_ie4tmnzrmuydmmbqhazdambqgqyde_46x46.png) no-repeat;
+    display: none;
+}
+//登录细节
+.login-details{
+    position: relative;
+    height: 380px;
+    width: 100%;
+}
+//右上角登录方式切换
+.login-details .login-method{
+    width: 53px;
+    height: 53px;
+    background: url(https://s10.mogucdn.com/p1/160418/upload_ifrdcojvgftdmmbqhazdambqmeyde_52x53.png) no-repeat;
+}
+.login-details .login-method,
+.login-mainr-method{
+    cursor: pointer;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+//扫一扫登录
+.scan-login{
+    background: url(https://s10.mogucdn.com/p1/160418/upload_ie4wiojrg43dombqhazdambqgqyde_190x37.png) no-repeat;
+    width: 200px;
+    height: 80px;
+    position: absolute;
+    left: 60px;
+    top: 30px;
+}
+//二维码
+.codeimg-app .codeimg{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    margin-left: -100px;
+}
+//中间的蘑菇街logo
+.codeimg-app .mogulogo{
+    background: url(https://s10.mogucdn.com/p1/160419/upload_ie4dinbymqzdmnbqhazdambqgiyde_33x33.png) no-repeat;
+    display: block;
+    height: 33px;
+    width: 33px;
+    background-color: #fff;
+    border: 4px solid #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -17px;
+    margin-left: -20px;
+    z-index: 999;
+    border-radius: 3px;
+}
+//点击下载蘑菇街APP
+.codeimg-app .download-APP{
+    display: block;
+    width: 200px;
+    height: 30px;
+    text-decoration: underline;
+    font-size: 18px;
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+    bottom: 0;
+}
+//电脑登录注册框
+.login-mainr .compute-login-tab{
+    height: 70px;
+    margin-left: -38px;
+    //隐藏
+    display: none;
+}
+.login-mainr .compute-login-tab>div{
+    float: left;
+    width: 50%;
+    border-bottom: 1px solid #ccc;
+    padding-top: 10px;
+}
+.login-mainr .compute-login-tab>div>a{
+    display: block;
+    width: 119px;
+    height: 43px;
+    line-height: 42px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    color: #3c3c3c;
+    margin: 0 auto;
+}
+//选中的加下划线
+.login-mainr .compute-login-tab .undeline{
+    color: #fe617a;
+    border-bottom: 2px solid #ff4066;
+    height: 41px;
+}
+//整个手机登陆框隐藏
+.signform{
+    display: none;
+}
+//登录名或密码错误
+.signform_box p{
+    width: 273px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #ffd797;
+    color: #ff1877;
+    background: url(https://s10.mogucdn.com/pic/140408/o613k_kqzfunswozbg2s2ugfjeg5sckzsew_16x16.png) no-repeat;
+    background-position: 12px;
+    background-color: #fffff8;
+    padding-left: 40px;
+    margin-bottom: 9px;
+    display: none;
+}
+//用户名/邮箱/手机号 密码  输入手机号码
+.successful_login input,
+.encode_login .inp_tel{
+    margin-bottom: 15px;
+    background: none;
+    border: 1px solid #ccc;
+    width: 300px;
+    height: 40px;
+    padding: 0 6px;
+}
+//无密码登录
+.encode_login #select_area{
+    -webkit-appearance:none;
+    width:110px;
+    height: 40px;
+    border: 1px solid #c4c4c4;
+    padding: 4px 35px 4px 16px;
+    color: #333;
+    font-size: 14px;
+    display: none;
+    background: url(https://s10.mogucdn.com/p2/161223/upload_52ff95279ih8leahhhl4l91l5729f_41x39.png) 100% no-repeat #ffedeb;
+}
+
+//获取动态验证码
+.getcheckcode{
+    display: none;
+}
+//获取动态验证码按钮
+.getcheckcode>a{
+    display: inline-block;
+    width: 110px;
+    height: 42px;
+    line-height: 42px;
+    color: #fff;
+    background: #ff5777;
+    text-align: center;
+    margin-right: 10px;
+}
+//输入动态验证码
+.getcheckcode>input{
+    width: 180px;
+    height: 40px;
+    border: 1px solid #ccc;
+    background: none;
+    padding: 0 6px;
+}
+//登录按钮
+.login-btn{
+    padding-top: 25px;
+}
+.login-btn>input{
+    width: 314px;
+    height: 40px;
+    background: #ff5777;
+    color: #fff;
+    border-radius: 2px;
+    cursor: pointer;
+    border: 0;
+}
+//选择qq登录还是微信登录
+.select_qq_wechat{
+    margin-top: 26px;
+}
+.select_qq_wechat>a{
+    margin-right: 47px;
+    display: inline-block;
+}
+.select_qq_wechat>a img{
+    margin-right: 6px;
+    vertical-align: middle;
+}
+//忘记密码
+.forget-code>a{
+    display: block;
+    float:right;
+    color: #959595;
+    text-decoration: underline;
+    margin-right: 20px;
+}
+
+//尾部
+//改变背景颜色
+.footer{
+    padding-top: 50px;
+    background-color: #f5f5f5;
+    background-image: none;
+    color: hsla(0,0%,40%,.7)
+}
+//字体颜色
+.footer a,
+.footer span,
+.footer p{
+    color: hsla(0,0%,40%,.7)
+}
+.footer .moguimg,
+.footer .footer-lists{
+    display: none;
+}
+
+//
+.footer-hostname-info-middle>span{
+    position: relative;
+}
+.footer-hostname-info-middle>span>img{
+    width: 20px;
+    position: absolute;
+    top: -5;
+    left: -24px;
+}
+.footer-hostname:after,
+.footer-hostname::before{
+    border-top-color:hsla(0,0%,40%,.3)
+}
+
+
+
+

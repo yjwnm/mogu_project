@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>注册</title>
+    <link rel="stylesheet" href="css/reg.css">
+</head>
+<body>
+    <!-- 头部 -->
+    <header class="login-header">
+        <!-- 版心 -->
+        <div class="login-header-wrap">
+            <a href="javascript:;">
+                <img src="https://s10.mogucdn.com/mlcdn/c45406/190102_088f4i166l4gkl08k297h5kk8690i_260x200.png" alt="蘑菇街logo">
+            </a>
+            <span>依《网络安全法》相关要求，即日起蘑菇街会员登陆需绑定手机。为保障您的账户安全及正常使用，如您尚未绑定，请尽快完成绑定，感谢您的理解和支持!</span>
+        </div>
+    </header>
+    <!-- 主题 -->
+    <div class="login-main clearfix">
+        <!-- 点击可跳转到登录页面 左边-->
+        <div class="login-mainl">
+            <a href="login.html"></a>
+        </div>
+        <!-- 登录 注册 右边-->
+        <div class="login-mainr reg_login">
+            <!-- 电脑登录 -->
+            <!-- 普通登录 手机无密码登录切换 -->
+            <div class="compute-login-tab clearfix" style="display: block">
+                <!-- 普通登录 -->
+                <div class="normal-login">
+                    <a href="javascript:;" title="普通登录" class="undeline"></a>
+                </div>
+            </div>
+            <!-- 登陆框 -->
+            <div class="signform" style="display: block">
+                <div class="signform_box">
+                    <!-- 登录名或密码错误 -->
+                    <p>登录名或密码错误</p>
+                    <form action="../php/reg.php" method="post">
+                        <!-- 正常登录 -->
+                        <div class="successful_login">
+                            <!-- 用户名/邮箱/手机号 -->
+                            <div class="login_by_tel">
+                                <input type="text" name="username" id="username" placeholder="手机号"><span style="font-size: 20px;margin-left: 2px;font-weight: bold;"></span>
+                            </div>
+                            <!-- 密码 -->
+                            <div class="successful_login_pass">
+                                <input type="text" name="password" id="password" placeholder="密码"><span style="font-size: 20px;margin-left: 2px;font-weight: bold;"></span>
+                            </div>
+                        </div>
+                        <!-- 登录按钮 -->
+                        <div class="login-btn reg-btn">
+                                <input type="submit" name="submit" id="submit" value="注册">
+                        </div>
+                        <!-- 选择qq登录 微信登录 -->
+                        <div class="select_qq_wechat">
+                            <!-- qq登录 -->
+                            <a href="javascript:;" class="qq_login">
+                                <img src="https://s10.mogucdn.com/p2/170104/upload_5763lkilh8f7abid345gbhh167d79_19x19.png" alt="qq登录">
+                                qq直接登录
+                            </a>
+                            <!-- 微信登录 -->
+                            <a href="javascript:;" class="wechat_login">
+                                <img src="https://s10.mogucdn.com/p2/170104/upload_8d4dd486c18961b55lf0hbe5ebf7l_18x19.png" alt="微信登录">
+                                微信直接登录
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 底部 -->
+    <div class="login-footer">
+
+    </div>
+    <script src="https://cdn.bootcss.com/jquery/1.11.1/jquery.js"></script>
+    <script src="js/reg.js"></script>
+</body>
+</html>

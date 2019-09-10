@@ -1,0 +1,119 @@
+// 侧边栏导航
+.aside-nav{
+    position: fixed;
+    height: 100%;
+    z-index: 8888;
+    top: 0;
+    width: 30px;
+    right: 0;
+    background: #202020;
+    box-sizing: border-box;
+}
+//侧边栏导航顶部空隙
+.aside-nav>div:nth-child(1){
+    height: 10%;
+}
+//侧边栏导航的各项
+.aside-nav .aside-item,
+.aside-nav .backtop
+{
+    padding: 10px 6px 0;
+    position: relative;
+}
+.aside-nav a{
+    color: #fff;
+}
+.aside-nav .aside-item>a{
+    display: block;
+    text-align: center;
+    line-height: 15px;
+    border-bottom: 1px solid #000;
+    padding-bottom: 10px;
+}
+//侧边栏导航的各项,鼠标悬停时,背景颜色改变
+.aside-nav .aside-item:hover{
+    background: #f46;
+    margin-top: -1px;
+}
+//侧边栏导航的各项,鼠标悬停时,a标签的下边框消失
+.aside-nav .aside-item:hover a{
+    border-bottom:0;
+}
+//客户服务二级导航 商家后台二级导航
+.aside-nav .aside-item .custom-server,
+.aside-nav .aside-item .sell{
+    width: 79px;
+    height: 60px;
+    line-height: 20px;
+    border-radius: 2px 0;
+    background-color: #494949;
+    padding: 10px 0 8px 24px;
+    box-sizing: content-box;
+    position: absolute;
+    top: 0;
+    left: -103px;
+    display: none;
+}
+//商家后台二级导航
+.aside-nav .aside-item .sell{
+    height: 88px;
+}
+//客户服务二级导航 商家后台二级导航右边的小三角
+.aside-nav .aside-item-custom>span,
+.aside-nav .aside-item-sell>span
+{
+    display: block;
+    width: 0;
+    height: 0;
+    border-bottom: 8px solid transparent;
+    border-top: 8px solid transparent;
+    border-right: none;
+    border-left: 5px solid #494949;
+    z-index: 999;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    margin-top:-9px;
+    left: 0;
+    display: none;
+}
+//鼠标悬停在客户服务上面,二级导航出现
+//鼠标悬停在商家后台上面,二级导航出现
+.aside-nav .aside-item-custom:hover .custom-server,
+.aside-nav .aside-item-custom:hover>span
+{
+    display: block;
+}
+.aside-nav .aside-item-sell:hover .sell,
+.aside-nav .aside-item-sell:hover span
+{
+    display: block;
+}
+//回到顶部
+.aside-nav .backtop{
+    position: absolute;
+    bottom: 10px;
+    width: 30px;
+    z-index: 9000;
+    padding: 10px 0 0;
+}
+.aside-nav .backt{
+    position: relative;
+    border-top: 1px solid rgba(221,221,221,.6);
+    background-color:#202020;
+    padding:10px 0 0;
+}
+//回到顶部小背景图
+.aside-nav .backtop .backt>i{
+    width: 30px;
+    height: 30px;
+    display: block;
+    cursor: pointer;
+    background: url(https://s10.mogucdn.com/p2/161011/upload_8dhi7ll8egg1ee9i12a3fc1lg93b9_609x784.png) no-repeat -266px -279px;
+}
+//鼠标悬停时,背景颜色改变
+.aside-nav .backt:hover{
+    background-color: #f46;
+}
+
+

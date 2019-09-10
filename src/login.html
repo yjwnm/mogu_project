@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登录</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <!-- 头部 -->
+    <header class="login-header">
+        <!-- 版心 -->
+        <div class="login-header-wrap">
+            <a href="javascript:;">
+                <img src="https://s10.mogucdn.com/mlcdn/c45406/190102_088f4i166l4gkl08k297h5kk8690i_260x200.png" alt="蘑菇街logo">
+            </a>
+            <span>依《网络安全法》相关要求，即日起蘑菇街会员登陆需绑定手机。为保障您的账户安全及正常使用，如您尚未绑定，请尽快完成绑定，感谢您的理解和支持!</span>
+        </div>
+    </header>
+    <!-- 主题 -->
+    <div class="login-main clearfix">
+        <!-- 点击可跳转到登录页面 左边-->
+        <div class="login-mainl">
+            <a href="login.html"></a>
+        </div>
+        <!-- 登录 注册 右边-->
+        <div class="login-mainr">
+            <!-- 登录方式切换 手机-->
+            <div class="login-mainr-method"></div>
+            <!-- 登录 -->
+            <div class="login-details">
+                <!-- 右上角登录方式切换 -->
+                <div class="login-method">
+
+                </div>
+                <!-- 扫一扫登录 -->
+                <div class="scan-login">
+                </div>
+                <!-- 二维码 下载手机APP -->
+                <div class="codeimg-app">
+                    <!-- 二维码 -->
+                    <div class="codeimg">
+                        <img src="../src/img/code.png" alt="二维码">
+                    </div>
+                    <!-- 中间的蘑菇街logo -->
+                    <span class="mogulogo"></span>
+                    <!-- 下载手机APP -->
+                    <a href="javascript:;" class="download-APP">点击下载手机APP</a>
+                </div>
+            </div>
+            <!-- 电脑登录 -->
+            <!-- 普通登录 手机无密码登录切换 -->
+            <div class="compute-login-tab clearfix">
+                <!-- 普通登录 -->
+                <div class="normal-login">
+                    <a href="javascript:;" title="普通登录" class="undeline">普通登录</a>
+                </div>
+                <!-- 手机无密码登录切换 -->
+                <div class="nocode-login">
+                    <a href="javascript:;" title="手机无密码登录">手机无密码登录</a>
+                </div>
+            </div>
+            <!-- 登陆框 -->
+            <div class="signform">
+                <div class="signform_box">
+                    <!-- 登录名或密码错误 -->
+                    <p>登录名或密码错误</p>
+                    <form action="">
+                        <!-- 正常登录 -->
+                        <div class="successful_login">
+                            <!-- 用户名 -->
+                            <div class="login_by_tel">
+                                <input type="text" name="username" id="username" placeholder="用户名">
+                            </div>
+                            <!-- 密码 -->
+                            <div class="successful_login_pass">
+                                <input type="text" name="password" id="password" placeholder="密码">
+                            </div>
+                        </div>
+                        <!-- 无密码登录 -->
+                        <div class="encode_login">
+                            <!-- 选择地区 -->
+                            <select name="" id="select_area">
+                                <option value="" selected>中国</option>
+                            </select>
+                            <!-- 输入手机号 -->
+                            <!-- <input type="text" placeholder="绑定手机号码" class="inp_tel"> -->
+                            <!-- 动态密码输入 -->
+                            <div class="changecode">
+                                <!-- 获取验证码 -->
+                                <div class="getcheckcode">
+                                    <!-- 获取动态密码按钮 -->
+                                    <a href="javascript:;">获取动态密码</a>
+                                    <!-- 输入动态密码 -->
+                                    <input type="text" placeholder="动态密码">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 登录按钮 -->
+                        <div class="login-btn login-button">
+                            <input type="button" name="submit" id="login" value="登录">
+                        </div>
+                        <!-- 选择qq登录 微信登录 -->
+                        <div class="select_qq_wechat">
+                            <!-- qq登录 -->
+                            <a href="javascript:;" class="qq_login">
+                                <img src="https://s10.mogucdn.com/p2/170104/upload_5763lkilh8f7abid345gbhh167d79_19x19.png" alt="qq登录">
+                                qq登录
+                            </a>
+                            <!-- 微信登录 -->
+                            <a href="javascript:;" class="wechat_login">
+                                <img src="https://s10.mogucdn.com/p2/170104/upload_8d4dd486c18961b55lf0hbe5ebf7l_18x19.png" alt="微信登录">
+                                微信登录
+                            </a>
+                            <a href="reg.html">立即注册</a>
+                        </div>
+                        <!-- 忘记密码 -->
+                        <div class="forget-code">
+                            <a href="javascript:;">忘记密码</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 底部 -->
+    <div class="login-footer">
+
+    </div>
+    <script src="https://cdn.bootcss.com/jquery/1.11.1/jquery.js"></script>
+    <script src="js/login.js"></script>
+    <script src="../../public.js"></script>
+</body>
+</html>

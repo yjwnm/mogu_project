@@ -1,0 +1,130 @@
+@import "reset";//重置样式
+//标题
+.what_you_like .like_title{
+    height: 25px;
+    width: 100%;
+    margin-top: 40px;
+    line-height: 25px;
+}
+.what_you_like .like_title>span{
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 30px;
+}
+//图片
+.goods_boxs{
+    width: 1200px;
+}
+.goods_boxs .goods_boxs_inner{
+    width: 1225px;
+    margin-top: 30px;
+}
+.goods_boxs .like_goods_lists{
+    width: 100%;
+}
+.goods_boxs .like_goods_lists li{
+    width: 218px;
+    height: 373px;
+    border: 1px solid #f2f2f2;
+    float: left;
+    position: relative;
+    overflow: hidden;
+    margin: 0 25px 25px 0;
+    background: #fff;
+}
+//找相似
+.find_similar{
+    width: 100%;
+    height: 24px;
+    line-height: 24px;
+    z-index: 5;
+    position: absolute;
+    left: 0;
+    top: 270px;
+    background-color: rgba(255,85,119,.7);
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    display: none;
+}
+//鼠标悬停时改变的边框颜色
+.goods_boxs .like_goods_lists .bordercolor:hover{
+    border: 1px solid rgba(255,85,119,.7);
+}
+.goods_boxs .like_goods_lists .bordercolor:hover .find_similar{
+    display: block;
+}
+//图片
+.like_goods_listsimg{
+    display: block;
+    width: 220px;
+    height: 293.5px;
+    overflow: hidden;
+    position: relative;
+}
+.like_goods_listsimg>img{
+    display: block;
+    width: auto;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+//图片描述
+.like_img_description{
+    display: block;
+    padding: 0 8px;
+    overflow: hidden;
+    color: #333;
+}
+.like_img_description>p{
+    height: 40px;
+    line-height: 20px;
+    position: relative;
+    margin-top: 6px;
+    margin-bottom: 3px;
+    font-size: 14px;
+    width: 100%;
+    overflow: hidden;
+}
+//价格
+.like_price{
+    width: 100%;
+    height: 25px;
+    line-height: 25px;
+    overflow: hidden;
+    color: #333;
+    position: relative;
+}
+//价格
+.like_price>b{
+    font-weight: 700;
+    font-size: 16px;
+}
+//del价格
+.like_price>p{
+    font-size: 13px;
+    color: #666;
+    margin: 3px 0 0 8px;
+    line-height: 20px;
+    display:inline-block;
+    margin-left: 0;
+}
+.like_price>p>del{
+    margin-left: -2px;
+}
+//右边的收藏数量
+.like_price>span{
+    color: #999;
+    position: absolute;
+    right: 0px;
+    bottom: 0;
+}
+.like_price>span>img{
+    height: 15px;
+    width: 16px;
+    vertical-align: -2px;
+    margin-right: 4px
+}

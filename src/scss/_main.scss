@@ -1,0 +1,417 @@
+@import "reset";//重置样式
+@import "_main_f2";//主体第二部分
+@import "_main_f3";//主体第三部分
+@import "_main_f4";//主体第四部分
+@import "_main_f10";//主体第十部分
+.main{
+    background: #f5f5f5;
+}
+//版心
+.main_wrap{
+    width: 1200px;
+    margin: 0 auto;
+}
+//顶部主题市场 限时快抢
+.main .limit-buy{
+    width: 100%;
+    height: 40px;
+    background-color: #fff;
+    border-bottom:2px solid #FF4466;
+}
+//左边主题市场
+.limit-buy .limit-buyl{
+    width: 257px;
+    height: 40px;
+    border-radius: 5px 5px 0 0;
+    float: left;
+    background: url(https://s10.mogucdn.com/mlcdn/c45406/181030_684h0hal8l370584ki2bl2lfea4ga_257x40.png) no-repeat;
+    position: relative;
+}
+.limit-buy .limit-buyl>a{
+    display: inline-block;
+    position: absolute;
+    left: 47px;
+    line-height: 40px;
+    font-size: 18px;
+    color: #fff;
+}
+//右边的限时抢购
+.limit-buy  .limit-buyr{
+    float: left;
+    height: 40px;
+}
+.limit-buy  .limit-buyr>a{
+    display: inline-block;
+    width: 140px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+    margin-top: 10px;
+    border-right: 1px solid #ddd;
+}
+.limit-buy  .limit-buyr>a:hover{
+    color: #FF4466;
+}
+
+//中间选择各类商品
+.main_select_lists{
+    background:rgb(186,232,252);
+    position: relative;
+}
+//左边选择商品列表
+.main_select_lists .select_lists_left{
+    float: left;
+    width: 256px;
+    height: 440px;
+    background-color: rgba(255, 255, 255, 0.8);
+    position: relative;
+    z-index: 1;
+}
+//所有li
+.select_lists_left li{
+    width: 256px;
+    height: 31px;
+}
+//第一个li
+.select_listsul>li:nth-child(1){
+    margin-top: 4px;
+}
+.select_lists_left li dl{
+    padding: 5px 0 5px 18px;
+    height: 21px;
+    border-left:2px solid transparent;
+}
+//鼠标悬停在dl上面
+.select_listsul>li>dl:hover{
+    border-left: 2px solid #ff558f;
+    background-color: #fff;
+}
+//所有dt dd
+.select_lists_left li dt,
+.select_lists_left li dd{
+    float: left;
+}
+//所有dt
+.select_lists_left li dt>a{
+    display: inline-block;
+    height: 21px;
+    line-height: 21px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    margin-right: 12px;
+}
+//所有dd里面的a
+.select_listsul li dd a{
+    display: inline-block;
+    margin:1px 10px 0 0;
+}
+//所有的em,插入图片
+.select_lists_left li dd em{
+    display:inline-block;
+    width: 12px;
+    height: 13px;
+    background: url(https://s10.mogucdn.com/mlcdn/c45406/181030_0j433hb2f44i8h93h1cd9b4447k52_24x28.png) no-repeat;
+    background-size: 100%;
+    margin-left: 2px;
+}
+//所有的a，鼠标悬停时加下划线
+.select_lists_left li a:hover{
+    text-decoration: underline;
+}
+//左边商品列表的二级导航
+.select_lists_left_subnav{
+    width: 777px;
+    height: 438px;
+    position: absolute;
+    top: 0;
+    left: 256px;
+    overflow: hidden;
+    background-color: #fff;
+    border: 1px solid #F2F2F2;
+    border-left: 0;
+    display: none;
+}
+//鼠标悬停，二级导航出现
+// .main .main_select_lists .select_listsul:hover .cloth{
+//     display: block;
+// }
+//左边二级导航列表
+.cloth .subnav_left{
+    width: 500px;
+    height: 100%;
+    float: left;
+    padding-left: 20px;
+}
+//左边二级导航列表dl
+.subnav_left>dl{
+    width: 100%;
+    margin: 15px 0 18px;
+    overflow: hidden;
+}
+//标题
+.subnav_left>dl>dt{
+    width: 100%;
+    height: 24px;
+}
+.subnav_left>dl>dt>a{
+    height: 40px;
+    line-height: 40px;
+    color: #333;
+}
+.subnav_left>dl>dt>a:first-child{
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+}
+.subnav_left>dl>dt>a:last-child{
+    display: block;
+    float: right;
+}
+.subnav_left>dl>dt>a:last-child>span{
+    display: block;
+    background: url(data:image/png;base64,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) no-repeat center center;
+    width: 13px;
+    height: 28px;
+    line-height: 28px;
+    margin-right: 2px;
+    margin-top: 5px;
+    background-size:contain;
+    float: right;
+}
+//详细信息
+.subnav_left>dl>dd{
+    margin-top: 8px;
+    min-height: 50px;
+}
+.subnav_left>dl>dd>a{
+    color: #999;
+    margin: 6px 20px 0 0;
+    display: block;
+    float: left;
+}
+//部分文字颜色变成红色
+.subnav_left>dl>dd .colorchange{
+    color: #FF4466;
+}
+//鼠标悬停时加下划线
+.subnav_left>dl>dd>a:hover{
+    text-decoration: underline;
+}
+//右边的猜你喜欢图片
+.subnav_guessyl{
+    float: left;
+    width: 256px;
+    height: 440px;
+    border-left: 1px solid #f6f6f6;
+}
+//猜你喜欢标题
+.subnav_guessyl>h2{
+    width: 100%;
+    height: 19px;
+    line-height: 19px;
+    font-size: 16px;
+    margin: 15px auto 10px;
+    text-align: center;
+}
+.subnav_guessyl>a{
+    display: block;
+    width: 100px;
+    height: 120px;
+    float: left;
+    margin: 6px 4px 2px 17px;
+}
+//图片
+.subnav_guessyl>a>div{
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    opacity: .8;
+}
+.subnav_guessyl>a>div>img{
+    width: 100%;
+}
+//描述
+.subnav_guessyl>a>p{
+    width: 100%;
+    height: 22px;
+    line-height: 22px;
+    opacity: .9;
+    overflow: hidden;
+}
+//中间的图片轮播
+.select_lists_img{
+    width: 768px;
+    height: 440px;
+    position: relative;
+    float: left;
+}
+.select_lists_img a{
+    display: block;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+}
+.select_lists_img a img{
+    display: inline-block;
+    width: 1134px;
+    vertical-align: middle;
+    margin-left: -183px;
+}
+
+//右边的欢迎来到蘑菇街
+.select_lists_right{
+    float: left;
+    position: absolute;
+    right: 84px;
+    top: 0;
+    width: 166px;
+    height: 420px;
+}
+//右边上半部分
+.top_vip,.bottom_movegoods{
+    width: 166px;
+    height: 205px;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-top: 10px;
+}
+//红色圆形图片
+.top_vip .top_vip_a1{
+    display: block;
+    width: 72px;
+    height: 72px;
+    margin:0 auto;
+    background: url(https://s10.mogucdn.com/p2/160826/upload_7a9719cl61k83h5cbkc9fl1330i5c_60x64.png) no-repeat center center;
+    background-color: #ff94c6;
+    border-radius: 100%;
+}
+//菇凉好！ 欢迎来逛蘑菇街~
+.welcome_mogu{
+    margin: 5px 0 7px 0;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    line-height: 1.5;
+}
+//欢迎来逛蘑菇街~
+.welcome{
+    font-weight: bold;
+}
+//会员中心
+.top_vip_a2{
+    display: block;
+    width: 72px;
+    height: 24px;
+    line-height: 24px;
+    border: 1px solid #FF4466;
+    color: #FF4466;
+    margin: 0 auto;
+    text-align: center;
+}
+//登录
+.top_vip_a3{
+    width: 50px;
+    height: 28px;
+    line-height: 28px;
+    background: #ff205d;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    margin: 5px 33px;
+    border-radius: 10px;
+    overflow: hidden;
+    display: none;
+}
+.top_vip_a3>span{
+    letter-spacing: 5px;
+}
+//免费注册 开小店
+.free_reg{
+    margin: 10px 0;
+    text-align: center;
+    color: #333;
+    display: block;
+}
+//鼠标悬停时显示下划线
+.free_reg>a:hover{
+    text-decoration: underline;
+}
+//待付款 待收货 待评价
+.pay_resave_say{
+    padding-top: 10px;
+    display: none;
+}
+.pay_resave_say>li{
+    float: left;
+    margin-left: 5px;
+    text-align: center;
+}
+.pay_resave_say>li>a{
+    display: block;
+}
+.pay_resave_say>li>a:first-child{
+    color: #333;
+}
+.pay_resave_say>li>a:last-child{
+    font-size: 20px;
+    color: #FF4466;
+    font-weight: bold;
+}
+//下面的更多实惠好物
+.bottom_movegoods .come_to_mogu{
+    width: 100%;
+    height: 75px;
+    text-align: center;
+}
+.bottom_movegoods .come_to_mogu>a{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    display: inline-block;
+}
+//来蘑菇街APP
+.bottom_movegoods .come_to_mogu>a:first-child{
+    font-size: 16px;
+    color: #333;
+    padding-top: 20px;
+}
+//海量时尚好货
+.bottom_movegoods .come_to_mogu>a:last-child{
+    font-size: 14px;
+    color: #666;
+    margin-top: 5px;
+}
+//更多实惠好物
+.movegoods{
+    display: block;
+    width: 130px;
+    height: 130px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.movegoods>img{
+    display: block;
+    width: 100%;
+}
+ 
+//主体第六部分  主体第七部分
+.beauty_makeup .woman_cloth_title>i,
+.ACC .woman_cloth_title>i{
+    background: #FF5777;
+}
+//主体第八部分
+.house .woman_cloth_title>i{
+    background: #ECCE8F;
+}
+//主体第九部分
+.food .woman_cloth_title>i{
+    background:#ECA68F;
+}

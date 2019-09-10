@@ -1,0 +1,513 @@
+@import "reset";//重置样式
+@import "header-nav";//公共部分头部导航
+@import "header-wrap";//头部版心部分
+@import "header-s-c-l";//搜索框 购物车 登陆注册
+@import "aside-nav";//侧边导航
+@import "footer";//底部
+@import "_topnav";//顶部悬浮
+.main_wrap{
+    width: 1200px;
+    margin: 0 auto;
+}
+#car_head .header-login-search{
+    margin-top:27px;
+}
+//顶部悬浮
+.car_head_xf{
+    width: 1200px;
+    height: 72px;
+    margin: 0 auto;
+}
+//主体部分
+//版心
+.car_main_wrap{
+    width: 1200px;
+    margin: 0 auto;
+}
+//进度条
+.car_main_top{
+    width:100%;
+}
+.car_main_top .car_main_topr{
+    float: right;
+    width: 494px
+}
+//右边的进度条
+.car_main_topr .car_main_topbox{
+    position: relative;
+    height: 23px;
+    margin: 0 auto;
+    padding: 18px 0 24px;
+    width: 494px;
+    background: url(https://s10.mogucdn.com/mlcdn/c45406/171012_6jk544lic9k1e9gchb2hj5gijfie1_157x23.png) 0 18px repeat-x;
+}
+//红色进度条
+.car_main_topbox .car_main_redpre{
+    position: absolute;
+    top: 18px;
+    left: 0;
+    width: 90px;
+    height: 23px;
+    background: url(https://s10.mogucdn.com/mlcdn/c45406/171012_49b624aecjd5ca4ab84ghl5ka305c_157x23.png) 23px 0 repeat-x;
+}
+//圆形图标
+.car_main_topbox>i{
+    position: absolute;
+    top: 18px;
+    width: 23px;
+    height: 23px;
+    line-height: 23px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+}
+.car_main_topbox>i>span{
+    position: absolute;
+    top: 24px;
+    width: 100px;
+    height: 20px;
+    line-height: 20px;
+    font-weight: 400;
+    left: 50%;
+    margin-left: -50px;
+    color: #999;
+    font-size: 12px;
+}
+.car_main_topbox .main_topbox_i1>span,
+.car_main_topbox .main_topbox_i2>span{
+    color: #f46;
+}
+.main_topbox_i1{
+    left: 0;
+}
+.main_topbox_i2{
+    left: 157px;
+}
+.main_topbox_i3{
+    left: 314px;
+}
+.main_topbox_i4{
+    left: 471px;
+}
+.main_topbox_i4 img{
+    width: 23px;
+    height: 23px;
+}
+//下面的主体部分
+.car_main_detail{
+    margin-bottom: 20px;
+    padding-top: 30px;
+}
+//全部商品 优惠 库存紧张
+.car_wrap_title li{
+    float: left;
+}
+.car_wrap_title li a{
+    display: block;
+    padding: 1px 0 6px;
+    color: #333;
+    line-height: 28px;
+    font-size: 20px;
+    margin-right: 55px;
+}
+.car_wrap_title li .car_wrap_title_a1{
+    color: #f57;
+    border-bottom: 3px solid #f57;
+}
+//加入购物车主体
+//头部
+.new_car_head{
+    width: 100%;
+    border: 1px solid #ddd;
+    overflow: hidden;
+    padding: 15px 0;
+    background-color: #f6f6f6;
+    margin-bottom: 20px;
+}
+.new_car_head li{
+    float: left;
+    text-align: center;
+}
+.select_box{
+    margin-right: 3px;
+}
+.new_car_head .new_cart_head_all{
+    width: 7.83%;
+    text-align: center;
+}
+.new_car_head .new_cart_head_info{
+    width: 60.5%;
+    text-align: left;
+    padding-left: 100px;
+    box-sizing: border-box
+}
+.new_cart_head_price{
+    width: 8.3%;
+}
+.new_cart_head_num{
+    width: 8.75%;
+}
+.new_cart_head_total{
+    width: 9.167%;
+}
+.new_cart_head_change{
+    width: 4.167%;
+}
+//店铺信息
+.new_car_shop_info{
+    margin: 20px 0;
+}
+.new_car_shop_info .new_car_shop_info_head{
+    padding: 14px 10px 12px 24px;
+    background: #fff
+}
+
+.new_car_shop_info_head .shop_name{
+    font-weight: 700;
+}
+.new_car_shop_info_head .tel_service{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url(https://s10.mogucdn.com/pic/140917/ubzlo_ieydmzldmq3tqojvmmytambqmmyde_16x19.gif) 50% no-repeat;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+.goods{
+    position: relative;
+    display: inline-block;
+    height: 22px;
+    color: #333;
+    line-height: 22px;
+}
+.more_good li{
+    margin-right: 15px;
+}
+.more_good li i{
+    margin-top: 10px;
+    float: left;
+    margin-right: 5px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #f13e3a;
+}
+//优惠券
+.car_items{
+    z-index: 9;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.car_items_btn{
+    border: 1px solid #f13e3a;
+    border-radius: 3px;
+    color: #f13e3a;
+    padding: 0 7px;
+}
+.car_items_btn i{
+    display: inline-block;
+    width: 10px;
+    height: 16px;
+    background: url(https://s10.mogucdn.com/p2/170301/80499004_5a20fh9jjldbbiccb80j71l886c8h_9x5.png) 0 9px no-repeat;
+}
+//二级导航
+.car_items_subnav{
+    width: 318px;
+    background-color: #fff;
+    position: absolute;
+    right: 0;
+    z-index: 9;
+    border: 1px solid #d1d1d1;
+    top: 23px;
+    display: none;
+}
+//鼠标悬停在优惠券按钮上，二级导航出现
+.car_items:hover .car_items_subnav{
+    display: block;
+}
+.close_subnav{
+    padding: 10px 15px 8px 20px;
+    color: #666;
+}
+.close_subnav a{
+    float: right;
+    width: 12px;
+    height: 12px;
+    background: url(https://s10.mogucdn.com/p1/150922/upload_ieztsy3gmvrgkytdgmzdambqgyyde_11x11.jpg) 50% no-repeat;
+}
+//优惠信息
+.car_items_info{
+    padding: 0 20px 10px;
+}
+.car_items_info ul li{
+    width: 137px;
+    overflow: hidden;
+    border-bottom: 1px solid #efefef;
+    position: relative;
+    padding: 10px 65px 15px;
+    margin: 5px 0;
+}
+.car_items_info .value {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 55px;
+    height: 25px;
+    text-align: center;
+    color: #fff;
+    background: #f13e3a;
+    margin-top: -13px;
+    line-height: 25px;
+    border-radius: 2px;
+}
+.car_items_info .cars_title{
+    width: 125px;
+    height: 14px;
+    line-height: 12px;
+}
+.car_items_info .car_date{
+    color: #999;
+    width: 125px;
+    height: 14px;
+    line-height: 12px;
+}
+.car_items_info .no_need{
+    position: absolute;
+    right: 0;
+    top: 10px;
+    width: 63px;
+    text-align: center;
+    height: 25px;
+    line-height: 25px;
+}
+.car_items_info .yes{
+    background: #fff;
+    border: 1px solid #d0d0d0;
+    color: #666;
+    cursor: pointer;
+}
+.floatl{
+    float: left;
+}
+.floatr{
+    float: right;
+}
+.car_items_info .no{
+    color: #999;
+}
+.car_items_info .value_no{
+    background: #ff8e33;
+}
+
+//加入的商品信息
+.shop_buy_goods{
+    width: 100%;
+    border: 1px solid #ddd;
+    padding: 24px 15px;
+    overflow: hidden;
+    margin-top: -1px;
+}
+.shop_buy_goods li{
+    float: left;
+}
+.shop_buy_goods_li1{
+    width: 2.5%;
+    font-size: 16px ;
+    margin-left: 9px;
+}
+.shop_buy_goods_li1 input{
+    display: block;
+}
+.shop_buy_goods_li2{
+    padding: 0 10px 15px 0;
+    width: 52.25%;
+}
+.shop_buy_goods_li2 .shop_buy_goods_img{
+    float: left;
+    position: relative;
+    height: 80px;
+}
+.shop_buy_goods_img img{
+    display: block;
+    border: 1px solid #ccc;
+    width: 78px;
+    width: 78px;
+}
+.shop_buy_goods_description{
+    display: block;
+    margin: 0 20px 0 90px;
+    line-height: 20px;
+    font-size: 14px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.shop_buy_goods_li3{
+    width: 11.67%;
+    height: 100px;
+}
+.shop_buy_goods_li3 p{
+    line-height: 20px;
+    color: #666
+}
+.shop_buy_goods_li4{
+    text-align: center;
+    width: 8.3%;
+}
+.shop_buy_goods_li4 p del{
+    line-height: 20px;
+    color: #999;
+}
+.shop_buy_goods_li4 .shop_buy_goods_del{
+    font-weight: 700;
+}
+.shop_buy_goods_li4 .discount{
+    display: inline-block;
+    padding: 4px 6px;
+    font-weight: 700;
+    line-height: 12px;
+    color: #ff5777;
+}
+.shop_buy_goods_li5{
+    width: 8.75%;
+}
+.shop_buy_goods_num{
+    position: relative;
+    width: 97px;
+    height: 27px;
+    margin: 0 auto 4px;
+}
+.shop_buy_goods_numtx{
+    border: 0;
+    width: 45px;
+    height: 12px;
+    line-height: 12px;
+    padding: 6px 0 7px;
+    border: 1px solid #ddd;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    left: 26px;
+    text-align: center;
+    color: #333;
+}
+.shop_buy_goods_num>span{
+    position: absolute;
+    cursor: pointer;
+    width: 27px;
+    height: 27px;
+    top: 0;
+}
+.cart_num_add{
+    right: 0;
+    background: url(https://s10.mogucdn.com/pic/150511/1blhwf_ie2tiobvhfrdkojrgezdambqhayde_360x900.png) 0 -140px no-repeat;
+}
+.cart_num_reduce{
+    left: 0;
+    background: url(https://s10.mogucdn.com/pic/150511/1blhwf_ie2tiobvhfrdkojrgezdambqhayde_360x900.png) 0 -180px no-repeat;
+    opacity: .5;
+    cursor: not-allowed;
+}
+.total{
+    width: 9.167%;
+    text-align: center;
+}
+.total p{
+    color: #ff5777;
+    font-size: 16px;
+}
+.delete_btn{
+    text-align: center;
+    margin-top: 5px;
+}
+
+//底部全选 删除
+.car_wrap_checkedbox{
+    position: relative;
+    height: 50px;
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    border-right: 0;
+    line-height: 50px;
+    margin-top: 16px;
+}
+//去付款
+.goto_pay{
+    display: block;
+    width: 152px;
+    height: 51px;
+    margin-top: -1px;
+    overflow: hidden;
+    background: #d8d8d8 url(https://s10.mogucdn.com/pic/150511/1blhwf_ie2tiobvhfrdkojrgezdambqhayde_360x900.png) 0 -800px no-repeat;
+}
+//总价
+.all_price{
+    position: relative;
+    padding: 0 12px 0 8px;
+    display: inline-block;
+    color: #ff5777;
+    font-weight: 700;
+    font-size: 26px;
+}
+//商品总数
+.all_goods_num{
+    color: #666;
+}
+.all_goods_num span{
+    color: #ff5777
+}
+//全选 删除 清空
+.all_checked{
+    position: relative;
+    padding-left: 58px;
+    width: 300px;
+}
+.all_checked input{
+    position: absolute;
+    left: 24px;
+    top: 50%;
+    margin-top: -6px;
+    font-size: 16px;
+}
+.all_checked label,
+.all_checked a{
+    margin-left: 10px;
+}
+.all_checked a{
+    color: #666;
+}
+.all_checked a:hover{
+    text-decoration: underline;
+}
+//购物车为空时显示的盒子
+.cart_empty{
+    position: relative;
+    padding: 60px 0 80px 480px;
+    background: #fff;
+}
+.cart_empty_icon {
+    position: absolute;
+    left: 50%;
+    margin-left: -215px;
+    width: 80px;
+    height: 60px;
+    background: url(https://s10.mogucdn.com/pic/150511/1blhwf_ie2tiobvhfrdkojrgezdambqhayde_360x900.png) -198px -136px no-repeat;
+}
+.cart_empty h5 {
+    padding-top: 2px;
+    color: #333;
+    font: 700 16px/1 helvetica,tahoma,arial,sans-serif;
+    margin-bottom: 20px;
+}
+.cart_empty_list li{
+    padding-left: 12px;
+    background: url(https://s10.mogucdn.com/pic/150511/1blhwf_ie2tiobvhfrdkojrgezdambqhayde_360x900.png) -344px -33px no-repeat;
+    color: #666;
+}
+.cart_empty_list li a{
+    color: #ff4f7c;
+}
+
+
+

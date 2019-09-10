@@ -1,0 +1,166 @@
+@import "reset";//重置样式
+//上半部分
+.main_wrap_top{
+    width: 100%;
+    height: 294px;
+    background-color: #ffffff;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    margin-top: 15px;
+}
+//今日必抢
+.main_wrap_top .f2_taday{
+    width: 230px;
+    height: 294px;
+    float: left;
+}
+.main_wrap_top .f2_taday>a{
+    background: url(https://s10.mogucdn.com/mlcdn/c45406/180423_4c1k410gfcjj100b7ck185ldbc1d4_460x588.png_999x999.v1c0.81.webp) no-repeat;
+    display: block;
+    width: 230px;
+    height: 294px;
+    overflow: hidden;
+    background-size: cover;
+}
+//倒计时
+.main_wrap_top .f2_taday .back{
+    height: 58px;
+    line-height: 58px;
+    position: absolute;
+    top: 215px;
+    left: 31.5px;
+    font-family: "DIN Condensed";
+    color: #333;
+    font-size: 32px;
+    overflow: hidden;
+}
+//数字
+.backtime .timechange{
+    display: inline-block;
+    height: 40px;
+    line-height: 50px;
+    width: 40px;
+    background: #0C0C0C;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 30px;
+    text-align: center;
+}
+//：
+.backtime .blank{
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+    top: -10px;
+}
+//右边的图片轮播
+.img_change{
+    overflow: hidden;
+}
+.img_change>ul{
+    position: relative;
+}
+.img_change>ul .box>li{
+    float: left;
+    width: 190px;
+    height: 248px;
+    padding: 30px 20px 16px 20px;
+}
+.img_change>ul .box>li>a:nth-child(1){
+    width: 190px;
+    height: 190px;
+    overflow: hidden;
+    display: block;
+}
+.img_change>ul .box{
+    padding: 0 20px;
+}
+//图片
+.img_change>ul .box>li>a:nth-child(1)>img{
+    width: 100%;
+    display: block;
+}
+//描述
+.img_change>ul .box>li>a:nth-child(2)>p{
+    height: 22px;
+    line-height: 20px;
+    color: #666;
+    font-size: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-top: 13px;
+    margin-bottom: 2px;
+    padding: 0 10px;
+}
+//价格 删除价格
+.img_change>ul .box>li>div{
+    position: relative;
+    top: -5px;
+    padding: 0 10px;
+}
+//价格
+.img_change>ul .box>li>div>em{
+    display: block;
+    color: #FF4466;
+    font-size: 22px;
+    float: left;
+}
+//删除价格
+.img_change>ul .box>li>div>del{
+    float: right;
+    display: block;
+    font-size: 14px;
+    color: #999;
+    margin-left: 10px;
+    position: relative;
+    top: 9px
+}
+//左右箭头
+.img_change #left,
+.img_change #right{
+    background: url(https://s18.mogucdn.com/p2/161124/upload_6fd40a60b3g62dkcg3cc5ijhkf5fe_298x70.png) no-repeat;
+    display: block ;
+    width: 25px ;
+    height: 54px ;
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+    opacity: .8;
+}
+.img_change #left{
+    left: 230px;
+}
+.img_change #right{
+    background-position: -39px;
+    right: 0px;
+}
+//底部
+.main_wrap_bottom{
+    width: 100%;
+    height: 150px;
+    margin-bottom:10px;
+}
+.main_wrap_bottom >a{
+    width: 230px;
+    height: 150px;
+    display: block;
+    float: left;
+    overflow: hidden;
+    margin-right: 10px;
+}
+//第一张图
+.main_wrap_bottom .main_wrap_bottom_a1{
+    width: 470px;
+}
+.main_wrap_bottom >a>img{
+    width: 100%;
+    display: block;
+}
+
+
+
+

@@ -1,0 +1,95 @@
+@import "reset";
+.top_changenav{
+    position: fixed;
+    left: 0;
+    top: -72px;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 1px 6px 0 #ccc;
+    z-index: 9999;
+    padding: 12px 0 9px;
+}
+//左边
+.top_changenav .left_allgoods{
+    width: 200px;
+    height: 43px;
+    float: left;
+    margin-top: 8px;
+    cursor: pointer;
+    position: relative;
+}
+.top_changenav .left_allgoods .inner_allgoods{
+    display: inline-block;
+    width: 130px;
+    height: 64px;
+    line-height: 64px;
+    padding: 0px 5px;
+    position: absolute;
+    left:0;
+    top: -18px;
+}
+//前面的蘑菇街图标
+.top_changenav .left_allgoods i{
+    background: url(https://s10.mogucdn.com/mlcdn/c45406/181030_097e3a0l4cei5le4ikf32kkfh8ib5_400x400.png) no-repeat center center;
+    background-size: cover;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+//后面的三角形
+.top_changenav .left_allgoods b{
+    display: inline-block;
+    width: 0;
+    height: 0;
+    content: "";
+    border: 6px solid transparent;
+    border-top: 6px solid rgb(255, 68, 102);
+    position: absolute;
+    right: 0;
+    top:50%;
+    margin-top: -3px;
+}
+//中间全部商品分类
+.top_changenav .left_allgoods span{
+    font-size: 14px;
+    color: rgb(255, 68, 102);
+    margin-left: 5px;
+    vertical-align: middle;
+}
+//二级导航
+.top_changenav .select_lists_left{
+    position: absolute;
+    left: 0;
+    top: 48px;
+}
+.left_allgoods_subnav{
+    display: none;
+}
+.top_changenav .select_lists_left_subnav{
+    margin-top: 4px;
+}
+
+.top_changenav .top_changenavul{
+    background-color: rgba(51, 51, 51, 0.9);
+}
+.top_changenav .select_lists_left .select_listsul a{
+    color: #fff;
+}
+.top_changenav .select_lists_left .select_listsul>li>dl:hover{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.top_changenav .select_lists_left .select_listsul .colorchange{
+    color: #FF4466;
+}
+//右边
+.top_changenav .right_APP{
+    float: left;
+}
+.header-s-c-l .header-search,
+.header-s-c-l .header-login{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+

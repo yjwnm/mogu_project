@@ -1,0 +1,153 @@
+//公共部分底部
+.footer{
+    background-image:url(https://s10.mogucdn.com/mlcdn/c45406/181031_40flk9d5hkkjf44246248clfl77f1_1440x500.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    overflow: hidden;
+    min-height: 180px;
+    color: #fff;
+}
+.footer a{
+    color: #fff;
+}
+//底部版心
+.footer-wrap{
+    width: 1200px;
+    margin: 0 auto;
+    min-height: 180px;
+}
+//蘑菇街图标
+.footer-wrap .moguimg{
+    width: 140px;
+    margin: 50px auto 49px;
+}
+.footer-wrap .moguimg img{
+    width: 100%;
+}
+
+//新手帮助 权益保障 支付方式 移动客户端下载
+.footer-lists{
+    position: relative;
+    width: 100%;
+    margin-left: 40px;
+    //清除浮动
+    overflow: hidden;
+} 
+//新手帮助 权益保障 支付方式 移动客户端下载标题
+.footer-list .footer-list-title{
+    font-size: 14px;
+    margin-bottom: 23px;
+    line-height: 20px;
+}
+//新手帮助 权益保障 支付方式 移动客户端下载标题下面的线
+.footer-list .footer-list-title>p{
+    display: block;
+    width: 30px;
+    height: 1px;
+    background: #fff;
+    margin-top: 4px;
+}
+.footer-list{
+    float: left;
+    width: 25%;
+}
+.footer-list>ul>li{
+    margin-bottom: 12px;
+    width: 80px;
+    height: 17px;
+    line-height: 17px;
+    font-weight: 300;
+ }
+//移动客户端下载下面的图片app
+.footer-list-four-app img{
+    display: none;
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    top: -14px;
+    left: -77px;
+    overflow: hidden;
+}
+.footer-list-four-app>li{
+    position: relative;
+}
+//鼠标悬停,图片app出现
+.footer-list-four-app>li:hover img{
+    display: block;
+}
+//鼠标悬停颜色改变
+.footer-list-first-help>li:hover a{
+    color: #FFEA08;
+}
+.footer-list-four-help>li:hover{
+     color: #FFEA08;
+ }
+
+ //关于我们 用户隐私保护
+ .footer-aboutus{
+    min-height: 20px;
+    margin-top: 50px;
+    font-weight: 300;
+ }
+ .footer-aboutus>ul{
+     text-align: center;
+     margin-left: 42px;
+ }
+ .footer-aboutus>ul>li{
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+ }
+//除了第一个,其他的后面都加上|
+.footer-aboutus>ul>li::after{
+    content: "|";
+    margin: 0 28px;
+    font-weight: 300;
+}
+//鼠标悬停时颜色改变
+.footer-aboutus>ul>li:hover a{
+    color: #FFEA08;
+}
+
+//公司名称
+.footer-hostname{
+    margin-top: 20px;
+    text-align: center;
+    position: relative;
+}
+//插入水平线
+.footer-hostname::after{
+    content: "";
+    width: 440px;
+    height: 1px;
+    border-top: 2px solid rgba(255,255,255,.5);
+    display: block;
+    position: absolute;
+    left: 21px;
+    top: 10px;
+}
+.footer-hostname::before{
+    content: "";
+    width: 440px;
+    height: 1px;
+    border-top: 2px solid rgba(255,255,255,.5);
+    display: block;
+    position: absolute;
+    right: 21px;
+    top: 10px;
+}
+
+//公司信息
+.footer-hostname-info{
+    line-height: 27px;
+    margin-top: 10px;
+    margin-bottom: 24px;
+    font-weight: 300;
+    text-align: center
+}
+.footer-hostname-info a:after,
+.footer-hostname-info-middle span::after{
+    content: "|";
+    margin: 0 10px;
+}

@@ -1,0 +1,210 @@
+@import "reset";//重置样式
+.marginb{
+    margin-bottom: 48px;
+}
+//左边的大图
+.woman_cloth_bpic{
+    height: 555px;
+}
+//中间的轮播
+.outbox{
+    width: 630px;
+    height: 555px;
+    margin-right: 10px;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
+.outbox .content_box{
+    width: 100%;
+    background: #fff;
+    height: 555px;
+    padding-left: 21px;
+}
+.outbox .content_box .banner_box{
+    width: 100%;
+    margin: 0 auto;
+    height: 520px;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+}
+//轮播的第一个盒子
+.banner_part4 .banner_box1{
+    width: 630px;
+    height: 555px; 
+    position: absolute;
+    top: 0;
+    left: 630px;
+    padding-top: 20px;
+}
+.banner_box1{
+    width: 630px;
+    height: 555px; 
+    position: absolute;
+    top: 0;
+    left:0;
+    padding-top: 20px;
+}
+.banner_part4 .banner_first_box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+}
+//上面的轮播
+.banner_box1 .f_boxs{
+    width: 182px;
+    height: 233px;
+    margin-right: 21px;
+    margin-bottom: 24px;
+    display: inline-block;
+    background: #ffffff;
+    overflow: hidden;
+}
+.banner_box1 .f_boxs>a,
+.banner_box1 .f_boxs>a .lunbo_img>img{
+    display: block;
+    width: 100%;
+    height: 100%
+}
+.banner_box1 .f_boxs>a .lunbo_img{
+    position: relative;
+    width: 182px;
+    height: 182px;
+    overflow: hidden;
+}
+//描述
+.banner_box1 .f_boxs>a .lunbo_desription{
+    width: 182px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+    margin-top: 4px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #333333;
+}
+//价格
+.banner_box1 .f_boxs>a .lunbo_img_price{
+    letter-spacing: 0;
+    height: 24px;
+    margin-top: 4px;
+    line-height: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: #FF4466;
+    letter-spacing: 0;
+}
+.banner_box1 .f_boxs>a .lunbo_img_price>span{
+    font-size: 16px;
+    display: inline-block;
+    margin-right: 3px;
+}
+//标题
+.shoe_handbag .woman_cloth_title>i{
+    background: #8FABFF;
+}
+//左边的大图
+//第二张图隐藏
+.shoe_handbag_imgs .woman_cloth_bpic>img:last-child{
+    display: none;
+}
+//下面的圆形按钮
+.btn_box{
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    z-index: 10;
+    margin: 0 auto;
+    text-align: center;
+}
+.btn_box a{
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin-right: 18px;
+    border-radius: 50%;
+    padding: 0;
+    background: #D8D8D8;
+}
+.btn_box .a_color{
+    background: #666;
+}
+//右边区域
+.shoe_handbag_right{
+    width: 310px;
+    height: 555px;
+    overflow: hidden;
+    float: right;
+    background: #fff;
+}
+//标题
+.hot_goods{
+    width: 274px;
+    height: 22px;
+    line-height: 22px;
+    overflow: hidden;
+    padding: 28px 20px 26px;
+}
+//热销商品推荐
+.hot_goods>span:first-child{
+    font-size: 18px;
+    color: #333;
+}
+//换一批
+.hot_goods>span:last-child{
+    font-size: 14px;
+    float: right;
+    color: #5F5F5F;
+    cursor: pointer;
+}
+.hot_goods>span:last-child::before{
+    background: url(https://s10.mogucdn.com/mlcdn/c45406/180320_6j5a92c57jl5l8c3j6je38cdle4g8_12x12.png) no-repeat;
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 0 3px;
+    line-height: 22px;
+}
+.f2{
+    display: block;
+    width: 274px;
+    height: 93px;
+    margin: 0 auto 21px;
+}
+//图片
+.f2 .right_img{
+    width: 93px;
+    height: 93px;
+    margin-right: 10px;
+    overflow: hidden;
+    float: left;
+}
+.f2 .right_img>img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+//描述
+.right_description{
+    float: right;
+    width: 170px;
+}
+.right_description .lunbo_img_desription{
+    font-size: 14px;
+    color: #666;
+    width: 100%;
+    height: 44px;
+    line-height: 22px;
+}
+//价格
+.right_description .lunbo_img_price{
+    font-size: 20px;
+}
+.right_description .lunbo_img_price>span{
+    font-size: 16px;
+    margin-right: -5px;
+}

@@ -1,0 +1,116 @@
+//搜索框 购物车 登陆注册 
+.header-login-search{
+   float: left;
+}
+.header-s-c-l .header-search{
+    float: left;
+    width: 552px;
+    height:44px;
+    margin-top: 27px;
+    margin-left: 70px;
+}
+//搜索框
+.search_box{
+    border-radius: 6px;
+    background: #F7F7F7;
+    width: 100%;
+}
+//文本框
+.search_box .search_box_tx{
+    float: left;
+    width: 462px;
+    height: 48px;
+    line-height: 48px;
+    border: none;
+    font-size: 14px;
+    background: #f7f7f7;
+    color: #666;
+    padding: 0 15px;
+}
+//搜索按钮
+.search_box .search_box_sm{
+    width: 58px;
+    height: 48px;
+    float: right;
+    background: url(https://s10.mogucdn.com/mlcdn/c45406/181205_2llkjh1g0fe27h51ahh5k5f27gkk9_116x96.png) no-repeat;
+    background-size: 100%;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    border: 0;
+    text-indent: -999px;
+}
+//购物车 下载APP
+.header-s-c-l .header-login{
+    float: left;
+    width: 342px;
+    margin: 27px 0 0 20px;
+}
+.header-s-c-l .header-login>div{
+    float: left;
+    margin-left: 30px;
+}
+.header-s-c-l .header-login .header-login-message{
+    margin-left: 0;
+}
+//消息
+.header-login-message>a{
+    background-image: url(https://s10.mogucdn.com/mlcdn/c45406/181016_626h76eek6jgl5621492ck0438af3_48x44.png);
+}
+//收藏
+.header-login-save>a>p{
+    background-image: url(https://s10.mogucdn.com/mlcdn/c45406/181016_1e18fbc53dab5f8f6c45h6e57954d_44x44.png);
+}
+//购物车
+.header-login-cart>a>p{
+    background-image: url(https://s10.mogucdn.com/mlcdn/c45406/181016_22cba5f6a88gdl2gf42i14hj7flk8_48x46.png);
+}
+//下载APP
+.header-login-APP>a>p{
+    background-image: url(https://s10.mogucdn.com/mlcdn/c45406/181205_2f1dbgdfffde6147cfl3e09864lge_40x40.png);
+}
+.header-s-c-l .header-login>div>a>p,
+.header-login-message>a{
+    width: 24px;
+    height: 24px;
+    margin-bottom: 2px;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.header-login-APPimg{
+    width: 181px;
+    height: 200px;
+    position: absolute;
+    right: 133px;
+    z-index: 999;
+    display: none;
+}
+.header-login-APPimg img{
+    width: 100%;
+}
+//鼠标悬停在下载APP上，二维码显示
+.header-login-APP:hover .header-login-APPimg{
+    display: block;
+}
+.point{
+    position: absolute;
+    right: 2px;
+    top: 0;
+}
+//登录
+.header-s-c-l .header-login .header-login-login{
+    line-height: 40px;
+    margin-left: 30px;
+    font-size: 14px;
+    color: #333;
+    float: right;
+}
+.header-login-login>a{
+    display:inline-block;
+}
+.header-login-login>a>img{
+    width: 30px;
+    height: 30px;
+    margin-right: 6px;
+}
+
